@@ -29,13 +29,32 @@
       deixe sua mensagem!
       <br /><br />
     </p>
-    <form action="" method="get" onsubmit="validarFormulario(event)">
+    <form
+      action="https://wa.me/5546999099164"
+      method="get"
+      target="_blank"
+      onsubmit="return prepararMensagem()"
+    >
       <input
         type="text"
+        id="mensagem"
         name="mensagem"
+        placeholder="Digite sua mensagem"
         oninput="this.value = this.value.replace(/[0-9]/g, '')"
       />
       <input type="submit" value="Enviar" />
     </form>
+
+    <script>
+      function prepararMensagem() {
+        const mensagem = document.getElementById("mensagem").value;
+        if (!mensagem.trim()) {
+          alert("Por favor, digite uma mensagem antes de enviar.");
+         ;
+        }
+        const numero = "5546999099164";
+        const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+      }
+    </script>
   </body>
 </html>
