@@ -1,29 +1,41 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Primeiro Site</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Bem-vindo ao meu site!</h1>
-    <p>Este é o meu primeiro site. Espero que goste!</p>
-    <img src="meu-foto.jpg" alt="Minha Foto">
+<html>
+  <head>
+    <title>Meu Primeiro Site Meu Amor</title>
+    <script src="ar.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Bem-vindo!</h1>
     <pre>
-        @..@
-       (----)
-      ( >__< )
-      ^^ ~~ ^^
-         o.O
-       /(   )\ 
-        (   )       
-        /---\
+       @..@
+      (----)
+     ( >__< )
+     ^^ ~~ ^^
     </pre>
-    <p class="p-red">Este é um parágrafo vermelho.</p>
-    <p class="p-green">Este é um parágrafo verde.</p>
-    <p class="p-blue">Este é um parágrafo azul.</p>
-    <p class="p-pink">Este é um parágrafo rosa e em negrito.</p>
-    <a href="https://www.example.com">Clique aqui para visitar o exemplo.com</a>
-</body>
+
+    <p class="p-red">Este é meu amor, cheio da grana.</p>
+    <p class="p-green">Ele é muito lindo &#160; e gostoso.</p>
+    <p class="p-blue">Ele é muito inteligente e carinhoso.</p>
+    <p class="p-pink">Ele é muito atencioso e amoroso.</p>
+    <!-- <div class="imagem"></div> -->
+    <img src="/OIP.jpg" alt="imagem">
+    <div>
+      <a href="https://www.instagram.com/p/DC5jFfntVZL/?img_index=1"
+        >Clique aqui para ver uma foto dele</a
+      >
+      <br /><br />
+    </div>
+    <p>
+      deixe sua mensagem!
+      <br /><br />
+    </p>
+    <form action="" method="get" onsubmit="validarFormulario(event)">
+      <input
+        type="text"
+        name="mensagem"
+        oninput="this.value = this.value.replace(/[0-9]/g, '')"
+      />
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
 </html>
